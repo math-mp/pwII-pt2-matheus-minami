@@ -53,12 +53,10 @@ function insertItem(item, index) {
     <td>${item.funcao}</td> 
     <td>R$ ${item.salario}</td> 
     <td class="acao"> 
-      <button onclick="editItem(${index})"><i class='bx bx-edit' 
-></i></button> 
+      <button onclick="editItem(${index})"><i class='bx bx-edit' ></i></button> 
     </td> 
     <td class="acao"> 
-      <button onclick="deleteItem(${index})"><i class='bx bx
-trash'></i></button> 
+      <button onclick="deleteItem(${index})"><i class='bx bx-trash'></i></button> 
     </td> 
   ` 
   tbody.appendChild(tr) 
@@ -103,7 +101,7 @@ btnSalvar.onclick = async e => {
     console.error('Erro ao salvar:', error); 
     alert('Erro ao salvar. Verifique se servidor está rodando.'); 
   } 
-} 
+}
  
 async function loadItens() { 
   itens = await getItensBD(); 
